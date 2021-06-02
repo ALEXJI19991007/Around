@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  around.api:
+    image: ${DOCKER_REGISTRY-}around
+    build:
+      context: .
+      dockerfile: Around.API/Dockerfile
